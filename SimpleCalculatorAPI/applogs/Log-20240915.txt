@@ -1,0 +1,76 @@
+2024-09-15 19:44:07.455 +08:00 [INF] Now listening on: http://localhost:5006
+2024-09-15 19:44:07.519 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-15 19:44:07.521 +08:00 [INF] Hosting environment: Development
+2024-09-15 19:44:07.522 +08:00 [INF] Content root path: C:\Users\suibi\source\repos\SimpleCalculatorAPI\SimpleCalculatorAPI
+2024-09-15 19:44:09.421 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5006/swagger/index.html - null null
+2024-09-15 19:44:09.559 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5006/swagger/index.html - 200 null text/html;charset=utf-8 141.969ms
+2024-09-15 19:44:09.711 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5006/_vs/browserLink - null null
+2024-09-15 19:44:09.711 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5006/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-15 19:44:09.716 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5006/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 5.4032ms
+2024-09-15 19:44:09.738 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5006/_vs/browserLink - 200 null text/javascript; charset=UTF-8 27.1164ms
+2024-09-15 19:44:09.774 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5006/swagger/v1/swagger.json - null null
+2024-09-15 19:44:09.847 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5006/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 72.9567ms
+2024-09-15 19:44:15.403 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5006/Calculation/CalculateMathOperation - application/json 5
+2024-09-15 19:44:15.414 +08:00 [WRN] Failed to determine the https port for redirect.
+2024-09-15 19:44:15.417 +08:00 [INF] Executing endpoint 'SimpleCalculatorAPI.Controllers.CalculationController.CalculateMathOperation (SimpleCalculatorAPI)'
+2024-09-15 19:44:15.433 +08:00 [INF] Route matched with {action = "CalculateMathOperation", controller = "Calculation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CalculateMathOperation(System.String) on controller SimpleCalculatorAPI.Controllers.CalculationController (SimpleCalculatorAPI).
+2024-09-15 19:44:15.464 +08:00 [INF] CalculateMathOperation Request received: 1+4
+2024-09-15 19:44:15.470 +08:00 [INF] CalculateMathOperation Response returned: 5
+2024-09-15 19:44:15.474 +08:00 [INF] Executing OkObjectResult, writing value of type 'System.Double'.
+2024-09-15 19:44:15.481 +08:00 [INF] Executed action SimpleCalculatorAPI.Controllers.CalculationController.CalculateMathOperation (SimpleCalculatorAPI) in 43.6099ms
+2024-09-15 19:44:15.481 +08:00 [INF] Executed endpoint 'SimpleCalculatorAPI.Controllers.CalculationController.CalculateMathOperation (SimpleCalculatorAPI)'
+2024-09-15 19:44:15.482 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:5006/Calculation/CalculateMathOperation - 200 null application/json; charset=utf-8 79.554ms
+2024-09-15 19:44:21.470 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5006/Calculation/CalculateMathOperation - application/json 5
+2024-09-15 19:44:21.473 +08:00 [INF] Executing endpoint 'SimpleCalculatorAPI.Controllers.CalculationController.CalculateMathOperation (SimpleCalculatorAPI)'
+2024-09-15 19:44:21.473 +08:00 [INF] Route matched with {action = "CalculateMathOperation", controller = "Calculation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CalculateMathOperation(System.String) on controller SimpleCalculatorAPI.Controllers.CalculationController (SimpleCalculatorAPI).
+2024-09-15 19:44:21.477 +08:00 [INF] CalculateMathOperation Request received: 5-1
+2024-09-15 19:44:21.479 +08:00 [INF] CalculateMathOperation Response returned: 4
+2024-09-15 19:44:21.480 +08:00 [INF] Executing OkObjectResult, writing value of type 'System.Double'.
+2024-09-15 19:44:21.480 +08:00 [INF] Executed action SimpleCalculatorAPI.Controllers.CalculationController.CalculateMathOperation (SimpleCalculatorAPI) in 5.9858ms
+2024-09-15 19:44:21.481 +08:00 [INF] Executed endpoint 'SimpleCalculatorAPI.Controllers.CalculationController.CalculateMathOperation (SimpleCalculatorAPI)'
+2024-09-15 19:44:21.482 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:5006/Calculation/CalculateMathOperation - 200 null application/json; charset=utf-8 11.8127ms
+2024-09-15 19:44:26.335 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5006/Calculation/CalculateMathOperation - application/json 5
+2024-09-15 19:44:26.337 +08:00 [INF] Executing endpoint 'SimpleCalculatorAPI.Controllers.CalculationController.CalculateMathOperation (SimpleCalculatorAPI)'
+2024-09-15 19:44:26.337 +08:00 [INF] Route matched with {action = "CalculateMathOperation", controller = "Calculation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CalculateMathOperation(System.String) on controller SimpleCalculatorAPI.Controllers.CalculationController (SimpleCalculatorAPI).
+2024-09-15 19:44:26.340 +08:00 [INF] CalculateMathOperation Request received: 5/3
+2024-09-15 19:44:26.342 +08:00 [INF] CalculateMathOperation Response returned: 1.6666666666666667
+2024-09-15 19:44:26.343 +08:00 [INF] Executing OkObjectResult, writing value of type 'System.Double'.
+2024-09-15 19:44:26.344 +08:00 [INF] Executed action SimpleCalculatorAPI.Controllers.CalculationController.CalculateMathOperation (SimpleCalculatorAPI) in 5.3634ms
+2024-09-15 19:44:26.344 +08:00 [INF] Executed endpoint 'SimpleCalculatorAPI.Controllers.CalculationController.CalculateMathOperation (SimpleCalculatorAPI)'
+2024-09-15 19:44:26.345 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:5006/Calculation/CalculateMathOperation - 200 null application/json; charset=utf-8 10.3357ms
+2024-09-15 19:44:31.547 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5006/Calculation/CalculateMathOperation - application/json 5
+2024-09-15 19:44:31.549 +08:00 [INF] Executing endpoint 'SimpleCalculatorAPI.Controllers.CalculationController.CalculateMathOperation (SimpleCalculatorAPI)'
+2024-09-15 19:44:31.550 +08:00 [INF] Route matched with {action = "CalculateMathOperation", controller = "Calculation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CalculateMathOperation(System.String) on controller SimpleCalculatorAPI.Controllers.CalculationController (SimpleCalculatorAPI).
+2024-09-15 19:44:31.554 +08:00 [INF] CalculateMathOperation Request received: 4*3
+2024-09-15 19:44:31.556 +08:00 [INF] CalculateMathOperation Response returned: 12
+2024-09-15 19:44:31.557 +08:00 [INF] Executing OkObjectResult, writing value of type 'System.Double'.
+2024-09-15 19:44:31.558 +08:00 [INF] Executed action SimpleCalculatorAPI.Controllers.CalculationController.CalculateMathOperation (SimpleCalculatorAPI) in 6.4128ms
+2024-09-15 19:44:31.559 +08:00 [INF] Executed endpoint 'SimpleCalculatorAPI.Controllers.CalculationController.CalculateMathOperation (SimpleCalculatorAPI)'
+2024-09-15 19:44:31.559 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:5006/Calculation/CalculateMathOperation - 200 null application/json; charset=utf-8 12.3483ms
+2024-09-15 19:44:40.260 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5006/Calculation/CalculateMathOperation - application/json 9
+2024-09-15 19:44:40.263 +08:00 [INF] Executing endpoint 'SimpleCalculatorAPI.Controllers.CalculationController.CalculateMathOperation (SimpleCalculatorAPI)'
+2024-09-15 19:44:40.264 +08:00 [INF] Route matched with {action = "CalculateMathOperation", controller = "Calculation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CalculateMathOperation(System.String) on controller SimpleCalculatorAPI.Controllers.CalculationController (SimpleCalculatorAPI).
+2024-09-15 19:44:40.267 +08:00 [INF] CalculateMathOperation Request received: 4*(3+9)
+2024-09-15 19:44:40.269 +08:00 [INF] CalculateMathOperation Response returned: 48
+2024-09-15 19:44:40.269 +08:00 [INF] Executing OkObjectResult, writing value of type 'System.Double'.
+2024-09-15 19:44:40.270 +08:00 [INF] Executed action SimpleCalculatorAPI.Controllers.CalculationController.CalculateMathOperation (SimpleCalculatorAPI) in 4.5699ms
+2024-09-15 19:44:40.271 +08:00 [INF] Executed endpoint 'SimpleCalculatorAPI.Controllers.CalculationController.CalculateMathOperation (SimpleCalculatorAPI)'
+2024-09-15 19:44:40.271 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:5006/Calculation/CalculateMathOperation - 200 null application/json; charset=utf-8 11.5518ms
+2024-09-15 19:44:53.937 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5006/Calculation/CalculateMathOperation - application/json 17
+2024-09-15 19:44:53.939 +08:00 [INF] Executing endpoint 'SimpleCalculatorAPI.Controllers.CalculationController.CalculateMathOperation (SimpleCalculatorAPI)'
+2024-09-15 19:44:53.940 +08:00 [INF] Route matched with {action = "CalculateMathOperation", controller = "Calculation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CalculateMathOperation(System.String) on controller SimpleCalculatorAPI.Controllers.CalculationController (SimpleCalculatorAPI).
+2024-09-15 19:44:53.943 +08:00 [INF] CalculateMathOperation Request received: 4*(3+9)/(18-10)
+2024-09-15 19:44:53.945 +08:00 [INF] CalculateMathOperation Response returned: 6
+2024-09-15 19:44:53.945 +08:00 [INF] Executing OkObjectResult, writing value of type 'System.Double'.
+2024-09-15 19:44:53.947 +08:00 [INF] Executed action SimpleCalculatorAPI.Controllers.CalculationController.CalculateMathOperation (SimpleCalculatorAPI) in 6.1889ms
+2024-09-15 19:44:53.948 +08:00 [INF] Executed endpoint 'SimpleCalculatorAPI.Controllers.CalculationController.CalculateMathOperation (SimpleCalculatorAPI)'
+2024-09-15 19:44:53.948 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:5006/Calculation/CalculateMathOperation - 200 null application/json; charset=utf-8 11.2887ms
+2024-09-15 19:45:17.295 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5006/Calculation/CalculateMathOperation - application/json 19
+2024-09-15 19:45:17.300 +08:00 [INF] Executing endpoint 'SimpleCalculatorAPI.Controllers.CalculationController.CalculateMathOperation (SimpleCalculatorAPI)'
+2024-09-15 19:45:17.301 +08:00 [INF] Route matched with {action = "CalculateMathOperation", controller = "Calculation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CalculateMathOperation(System.String) on controller SimpleCalculatorAPI.Controllers.CalculationController (SimpleCalculatorAPI).
+2024-09-15 19:45:17.303 +08:00 [INF] CalculateMathOperation Request received: 4*(3+9)/(18-10)-5
+2024-09-15 19:45:17.305 +08:00 [INF] CalculateMathOperation Response returned: 1
+2024-09-15 19:45:17.305 +08:00 [INF] Executing OkObjectResult, writing value of type 'System.Double'.
+2024-09-15 19:45:17.306 +08:00 [INF] Executed action SimpleCalculatorAPI.Controllers.CalculationController.CalculateMathOperation (SimpleCalculatorAPI) in 4.3111ms
+2024-09-15 19:45:17.307 +08:00 [INF] Executed endpoint 'SimpleCalculatorAPI.Controllers.CalculationController.CalculateMathOperation (SimpleCalculatorAPI)'
+2024-09-15 19:45:17.307 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:5006/Calculation/CalculateMathOperation - 200 null application/json; charset=utf-8 13.0028ms
