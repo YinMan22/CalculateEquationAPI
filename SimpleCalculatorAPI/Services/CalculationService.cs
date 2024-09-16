@@ -39,7 +39,7 @@ namespace SimpleCalculatorAPI.Services
             catch (SyntaxErrorException ex)
             {
                 _logger.LogError($"CalculateMathOperation SyntaxError occurred: {ex.Message} | Request received: {operation}");
-                throw new ArgumentException($"Error: {ex.Message}");
+                throw new ArgumentException($"{ex.Message}");
             }
             catch (Exception ex)
             {

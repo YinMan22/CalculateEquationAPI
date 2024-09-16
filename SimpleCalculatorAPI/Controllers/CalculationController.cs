@@ -1,5 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using SimpleCalculatorAPI.Authentication;
 using SimpleCalculatorAPI.Interface;
 using System.ComponentModel.DataAnnotations;
 
@@ -16,8 +16,8 @@ namespace SimpleCalculatorAPI.Controllers
             _calculationService = calculationService;
         }
 
-        //[Authorize]
         [HttpPost("CalculateMathOperation")]
+        [ServiceFilter(typeof(ApiKeyAuthFilter))]
         public IActionResult CalculateMathOperation([FromBody][Required] string operation)
         {
             try
