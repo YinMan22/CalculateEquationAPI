@@ -1,9 +1,44 @@
 @SimpleCalculatorAPI_HostAddress = http://localhost:5006
+@ApiKey = 6c0da563-1433-421d-be01-96166f6c0647
 
-GET {{SimpleCalculatorAPI_HostAddress}}/weatherforecast/
-Accept: application/json
+### Positive case: input valid operation and get answer
+POST {{SimpleCalculatorAPI_HostAddress}}/Calculation/CalculateMathOperation
+Content-type: application/json
+x-api-key: {{ApiKey}}
+"1+1"
 
-###
+### Positive case: *,/ have higher precedence than +,-
+POST {{SimpleCalculatorAPI_HostAddress}}/Calculation/CalculateMathOperation
+Content-type: application/json
+x-api-key: {{ApiKey}}
+"1+4/2"
 
-POST {{SimpleCalculatorAPI_HostAddress}}/Calculation/MathOperation
+### Negative case(400 Bad Request): invalid math operation 
+POST {{SimpleCalculatorAPI_HostAddress}}/Calculation/CalculateMathOperation
+Content-type: application/json
+x-api-key: {{ApiKey}}
+"1/0"
+
+### Negative case(400 Bad Request): API key missing
+POST {{SimpleCalculatorAPI_HostAddress}}/Calculation/CalculateMathOperation
+Content-type: application/json
+"1+1"
+
+### Negative case(400 Bad Request): operation field is required
+POST {{SimpleCalculatorAPI_HostAddress}}/Calculation/CalculateMathOperation
+Content-type: application/json
+x-api-key: {{ApiKey}}
+""
+
+### Negative case(400 Bad Request): invalid charachaters
+POST {{SimpleCalculatorAPI_HostAddress}}/Calculation/CalculateMathOperation
+Content-type: application/json
+x-api-key: {{ApiKey}}
+"abc&2@"
+
+### Negative case(400 Bad Request): syntax error
+POST {{SimpleCalculatorAPI_HostAddress}}/Calculation/CalculateMathOperation
+Content-type: application/json
+x-api-key: {{ApiKey}}
+"1-"
 
